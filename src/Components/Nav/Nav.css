@@ -1,0 +1,103 @@
+header{
+    padding-top: 10px;
+    background-color: black;
+    height: 380px;
+    border-bottom-left-radius: 6%;
+    border-bottom-right-radius: 6%;
+}
+.Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-left: 45px;
+    padding-right: 45px;
+    
+}
+.Navbrand a{
+   font-size: 25px;
+   text-decoration: none;
+   color: white;
+}
+.NavList ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.NavList ul li{
+    list-style: none;
+}
+.NavList  ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.Navcontent{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
+.Navcontent button{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background: black;
+}
+.Navcontent button:hover{
+    color: black;
+    background: white;
+    transition: 0.5s;
+}
+.Navcontent button:focus{
+    outline: none;
+}
+#hidden{
+    display: flex;
+}
+.ToggleBtn{
+    display: none;
+    height: 30px;
+    background: black;
+    padding-top: 4px;
+    border-radius: 4px;
+}
+.ToggleBtn:focus{
+    outline: none;
+}
+
+
+@media (max-width:768px){
+
+    .ToggleBtn{
+        display: flex;
+    }
+    .NavList{
+        display: none;
+    }
+    #hidden ul{
+        position: absolute;
+        top: 110px;
+        height: 180px;
+        left:0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        border-radius: 8px;
+    }
+    #hidden ul li a{
+        color: black;
+    }
+    
+    .Navcontent{
+        margin-top: 90px;
+        font-size: 0.8rem;
+    }
+    .Nav{
+        margin-top: 20px;
+    }
+   
+}
